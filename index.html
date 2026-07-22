@@ -1,57 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRIME CORE</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="images" href="images/circlelogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishingSupply</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/circlelogo.png">
 </head>
+
 <body>
 
-<header class="header">
-  <h1 class="logo">🛒POWER CORE TECH</h1>
-  <button class="toggle-theme" id="toggleTheme">🌙</button>
-</header>
+    <header class="header">
+        <div class="logo">🛒 PRIME CORE SHOP</div>
 
-<section class="hero">
-  <h1 class="hero-title"><span>Premium Phones</span></h1>
-  <h1 class="hero-title"><span>Powerful Performance.</span></h1>
-  <p class="hero-desc">Find flagship smartphones, trusted accessories, and professional mobile solutions at Prime Core Tech.</p>
-  <button class="btn-primary">Browse Collection</button>
-</section>
+        <div class="header-actions">
+            <button class="btn btn--ghost">Login</button>
+            <button class="btn btn--primary btn--cart">
+                Cart <span class="badge">1</span>
+            </button>
+        </div>
+    </header>
 
-<section class="features">
-  <h2 class="section-title">Explore Prime Core</h2>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero__title">
+              Unleash <span class="highlight">Flagship Performance</span> with Prime Core</h1>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Flexbox</h3>
-      <p>Align, center, and distribute space easily with powerful one-dimensional layouts.</p>
-    </div>
+            <p class="hero__subtitle">
+    Shop the newest smartphones and enjoy exclusive deals, limited time discounts, and the latest mobile technology.
+</p>
 
-    <div class="card">
-      <h3>CSS Grid</h3>
-      <p>Create dynamic two-dimensional layouts with responsive auto-fit columns.</p>
-    </div>
+            <button class="btn btn--primary">Shop Now</button>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>CSS Variables</h3>
-      <p>Define theme colors, spacing, and typography that update instantly.</p>
-    </div>
+    <section class="filters">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="pill-group">
+          <button class="pill pill--active">Gaming Phones</button>
+          <button class="pill">Flagship Phones</button>
+          <button class="pill">Budget Phones</button>
+          <button class="pill">Accessories</button>
+        </div>
+        
+    </section>
 
-    <div class="card">
-        <h3>CSS Variables</h3>
-        <p>Define theme colors, spacing, and typography that update instantly.</p>
-      </div>
+    <section class="products">
+        <h2 class="section-title">Featured Products</h2>
 
-</section>
+        <div class="product-grid">
 
-<script>
-  document.getElementById("toggleTheme").onclick = function () {
-    document.body.classList.toggle("dark");
-  };
-</script>
+            <article class="card card--sale">
+                <div class="card__image">
+                  <img src="images/redmagic.jpg" alt="Mavllos Focoso">
+                </div>
+                
+                <h3 class="card__name">REDMAGIC 10 Pro</h3>
+
+<p class="card__meta">
+    Gaming Smartphone, Snapdragon 8 Elite, 120Hz AMOLED Display
+</p>
+
+<div class="card__price">
+    <span class="price-current">$699.00</span>
+    <span class="price-old">$799.00</span>
+</div>
+
+<div class="rating">⭐⭐⭐⭐⭐ (4.9)</div>
+
+                <button class="btn btn--add">
+                    Add to Cart
+                </button>
+            </article>
+
+            <article class="card card--sale">
+                <div class="card__image">
+                  <img src="images/shark2.jpg" alt="Shimani Stella">
+                </div>
+
+                <h3 class="card__name">Black Shark 5 Pro</h3>
+
+<p class="card__meta">
+    Gaming Smartphone, Snapdragon 8 Gen 1, Magnetic Pop-up Triggers
+</p>
+
+<div class="card__price">
+    <span class="price-current">$599.00</span>
+    <span class="price-old">$699.00</span>
+</div>
+
+<div class="rating">⭐⭐⭐⭐⭐ (4.8)</div>
+
+                <button class="btn btn--add">
+                    Add to Cart
+                </button>
+            </article>
+
+<article class="card card--sale">
+                <div class="card__image">
+                  <img src="images/iqoo.jpg" alt="Rapala X-Rap">
+                </div>
+
+                <h3 class="card__name">iQOO 15 5G</h3>
+
+<p class="card__meta">
+    Flagship Smartphone, High Refresh Display, Fast Charging
+</p>
+
+<div class="card__price">
+    <span class="price-current">$649.00</span>
+</div>
+
+<div class="rating">⭐⭐⭐⭐⭐ (4.8)</div>
+                <button class="btn btn--add">
+                    Add to Cart
+                </button>
+            </article>
+
+            <article class="card card--sale">
+                <div class="card__image">
+                  <img src="images/sum2.jpg" alt="Rapala X-Rap">
+                </div>
+
+                <h3 class="card__name">Samsung Galaxy S24 Ultra</h3>
+
+<p class="card__meta">
+    AI Flagship Smartphone with S Pen and 200MP Camera
+</p>
+
+<div class="card__price">
+    <span class="price-current">$999.00</span>
+    <span class="price-old">$1,199.00</span>
+</div>
+
+<div class="rating">⭐⭐⭐⭐⭐ (4.9)</div>
+                <button class="btn btn--add">
+                    Add to Cart
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+    © 2026 PrimeCore. Advanced CSS Showcase. All rights reserved.
+</footer>
 
 </body>
 </html>
